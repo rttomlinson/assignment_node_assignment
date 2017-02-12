@@ -1,0 +1,24 @@
+{
+    "message1" : {
+                    "level" : "INFO",
+                    "message" : "This is my house"
+                },
+    "message2" : {
+                    "level" : "WARNING",
+                    "message" : "Dont do drugs"
+                },
+    "message3" : {
+                    "level" : "ERROR",
+                    "message" : "Didn't finish high school"
+        
+                },
+    "message4" : {
+                    "level" : "INFO",
+                    "message" : "I want to be a developer"
+        
+                },
+    "message5" : {
+                    "level" : "ERROR",
+                    "message" : "Brain overload!"
+                }
+}

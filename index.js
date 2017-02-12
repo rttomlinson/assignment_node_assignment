@@ -1,6 +1,7 @@
 var chalk = require("chalk");
 var _ = require("lodash");
 var logger = require("./lib/logger.js");
+var messages = require("./data/messages.json");
 
 /* Demonstration Purposes
 console.log(chalk.blue("Hello world!"));
@@ -21,6 +22,6 @@ function logMessage(message, level) {
     logger.log(LEVELS[level](message));
 }
 
-logMessage("INFO", "INFO");
-logMessage("WARNING", "WARNING");
-logMessage("ERROR", "ERROR");
+_.each(messages, function(element, index, collection) {
+    logMessage(element["message"], element["level"]);
+});
